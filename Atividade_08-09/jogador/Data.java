@@ -5,12 +5,11 @@ public class Data{
 
     int intervaloAnos(int diaP, int mesP, int anoP){
         int diffAno = anoP - this.ano;
-        if (mesP > mes)
+
+        if (mesP < this.mes || (mesP == this.mes && diaP < this.dia)) {
             diffAno--;
-        else 
-        if (mesP == this.mes && diaP < dia)
-             diffAno--;
-    
+        }
+
         return diffAno;
     }
 }
