@@ -3,7 +3,7 @@ public class CalculadoraAcademica {
     /**
      * Calcula a média de um aluno.
      * @param aluno O objeto Aluno cujas notas serão usadas no cálculo.
-     * @return A média final do aluno.
+     * @return A média final do 
      */
     public static double calculaMedia(Aluno aluno) {
         double pesoProva = 2.5;
