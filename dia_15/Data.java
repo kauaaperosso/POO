@@ -1,6 +1,3 @@
-import java.util.*;
-import java.io.IOException;
-
 public class Data{
     int dia;
     int mes;

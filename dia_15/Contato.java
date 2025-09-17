@@ -1,5 +1,3 @@
-import java.util.*;
-import java.io.IOException;
 
 public class Contato{
     boolean isWhats;
@@ -12,5 +10,29 @@ public class Contato{
         this.isWhats = isWhats;
         this.isTelegram = isTelegram;
         this.numero = numero;
+    }
+
+    public String mostraContato() {
+        String servicos = "";
+
+        if (isWhats) {
+            servicos += "WhatsApp";
+        }
+        if (isTelegram) {
+            if (!servicos.isEmpty()) {
+                servicos += ", ";
+            }
+            servicos += "Telegram";
+        }
+
+        if (!servicos.isEmpty()) {
+            return "Número: " + this.numero + " (" + servicos + ")";
+        } else {
+            return "Número: " + this.numero;
+        }
+    }
+
+    public String toString() {
+        return mostraContato();
     }
 }

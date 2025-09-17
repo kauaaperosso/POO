@@ -1,6 +1,3 @@
-import java.util.*;
-import java.io.IOException;
-
 public class Pessoa{
     String nome;
     Data dtNasc;
@@ -28,13 +25,15 @@ public class Pessoa{
         }
     }
 
-    void listarContatos(){
-        for (int i = 0; i < numContatos; i++)
+    public void listarContatos() {
+        for (int i = 0; i < numContatos; i++) {
             System.out.println(this.contatos[i]);
+        }
     }
 
     void imprimePessoa(){
         System.out.println(this.nome);
         System.out.println(this.dtNasc.dataString());
+        listarContatos();
     }
 }
