@@ -8,6 +8,5 @@ abstract class Faculdade{
     }
     
     public void imprimeDescrição(){
-        System.out.println("Nome: "+ this.getNome());
     }
 }

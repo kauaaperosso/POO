@@ -1,15 +1,17 @@
 public class Aluno extends Faculdade{
 
-    private String Curso;
+    private String curso;
     
     public String getCurso(){
-        return Curso;
+        return curso;
     }
-    
-    public String setCurso(String Curso){
-        this.Curso = Curso;
+
+    public String setCurso(String curso){
+        this.curso = curso;
+        
     }
 
     public void imprimeDescrição(){
+        System.out.println("Nome: "+ this.getNome() + "Descrição: " + this.getCurso()+"\n");
     }
 }
