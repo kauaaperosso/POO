@@ -1,5 +1,9 @@
 public class Main{
     public static void main(String [] args){
+
+        
+
+
         Forma f = new Forma();
         f.x = 23;
         f.y = 32;
